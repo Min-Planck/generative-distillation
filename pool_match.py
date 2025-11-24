@@ -35,7 +35,7 @@ def define_model(args, num_classes, e_model=None):
         model = random.choice(model_pool)
         print('Random model: {}'.format(model))
 
-    if args.data == 'mnist' or args.data == 'fashion':
+    if args.data == 'mnist' or args.data == 'fmnist':
         nch = 1
     else:
         nch = 3

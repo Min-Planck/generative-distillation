@@ -29,7 +29,7 @@ def define_model(args, num_classes, e_model=None):
     else:
         model = args.match_model
 
-    if args.data == 'mnist' or args.data == 'fashion':
+    if args.data == 'mnist' or args.data == 'fmnist':
         nch = 1
     else:
         nch = 3
