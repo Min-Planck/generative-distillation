@@ -22,7 +22,7 @@ def diffaug(args, device='cuda'):
     aug_type = args.aug_type
     if args.data == 'cifar10':
         normalize = Normalize((0.491, 0.482, 0.447), (0.202, 0.199, 0.201), device='cuda')
-    elif args.data == 'fashion':
+    elif args.data == 'fmnist':
         normalize = Normalize((0.286,), (0.353,), device='cuda')
     elif args.data == 'mnist':
         normalize = Normalize((0.131,), (0.308,), device='cuda')
